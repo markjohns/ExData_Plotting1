@@ -1,5 +1,6 @@
 ##plot4.R
-
+ls()
+rm(list=ls())
 ## the file with the data should be unzipped and placed in the working directory
 ## please install the following packages
 ##lubridate
@@ -77,7 +78,7 @@ plot(data_with_date_time$Date_time, data_with_date_time$Sub_metering_1, ylab = "
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_1, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "black")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_2, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "red")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_3, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "blue")
-legend("topright", pch = "-", lty = 1, lwd =2, bty ="n", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.6)
+legend("topright", lty = 1, lwd =1, bty ="n", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.6)
 
 
 ##the plot in the bottom right is plot of Global_reactive_power by day of the week
@@ -102,7 +103,7 @@ plot(data_with_date_time$Date_time, data_with_date_time$Sub_metering_1, ylab = "
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_1, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "black")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_2, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "red")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_3, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "blue")
-legend("topright", pch = "-", lty = 1, lwd =2, bty ="n", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.6)
+legend("topright", lty = 1, lwd =1, bty ="n", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.6)
 
 
 ##the plot in the bottom right is plot of Global_reactive_power by day of the week
