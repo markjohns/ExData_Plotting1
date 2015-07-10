@@ -1,6 +1,5 @@
 ##plot4.R
-ls()
-rm(list=ls())
+
 ## the file with the data should be unzipped and placed in the working directory
 ## please install the following packages
 ##lubridate
