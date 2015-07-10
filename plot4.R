@@ -72,12 +72,12 @@ plot(data_with_date_time$Date_time, data_with_date_time$Global_active_power, yla
 plot(data_with_date_time$Date_time, data_with_date_time$Voltage, ylab = "Voltage", xlab = "datetime", type = "l", pch = 3, lwd =1)
 
 
-##the plot in the bottom left is the sane as the the third plot (plot3.png) that is a plot of Energy Sub Metering by day of the week
+##the plot in the bottom left is the sane as the the third plot (plot3.png) that is a plot of Energy Sub Metering by day of the week; there is no box around the legend, though
 plot(data_with_date_time$Date_time, data_with_date_time$Sub_metering_1, ylab = "Energy sub metering", xlab = "", type = "n", pch = 3, lwd =1, col = "black")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_1, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "black")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_2, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "red")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_3, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "blue")
-legend("topright", pch = "-", lty = 1, lwd =2, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.6)
+legend("topright", pch = "-", lty = 1, lwd =2, bty ="n", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.6)
 
 
 ##the plot in the bottom right is plot of Global_reactive_power by day of the week
@@ -97,12 +97,12 @@ plot(data_with_date_time$Date_time, data_with_date_time$Global_active_power, yla
 plot(data_with_date_time$Date_time, data_with_date_time$Voltage, ylab = "Voltage", xlab = "datetime", type = "l", pch = 3, lwd =1)
 
 
-##the plot in the bottom left is the sane as the the third plot (plot3.png) that is a plot of Energy Sub Metering by day of the week
+##the plot in the bottom left is the sane as the the third plot (plot3.png) that is a plot of Energy Sub Metering by day of the week; there is no box around the legend, though
 plot(data_with_date_time$Date_time, data_with_date_time$Sub_metering_1, ylab = "Energy sub metering", xlab = "", type = "n", pch = 3, lwd =1, col = "black")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_1, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "black")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_2, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "red")
 lines(data_with_date_time$Date_time, data_with_date_time$Sub_metering_3, ylab = "Energy Sub Metering", xlab = "", type = "l", pch = 3, lwd =1, col = "blue")
-legend("topright", pch = "-", lty = 1, lwd =2, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.6)
+legend("topright", pch = "-", lty = 1, lwd =2, bty ="n", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.6)
 
 
 ##the plot in the bottom right is plot of Global_reactive_power by day of the week
